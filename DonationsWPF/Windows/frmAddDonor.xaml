@@ -1,0 +1,33 @@
+﻿<Window x:Class="DonationsWPF.frmAddDonor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DonationsWPF"
+        mc:Ignorable="d"
+        Title="frmAddDonor" Height="250" Width="400"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Content="Name:" HorizontalAlignment="Left" Width="150" Margin="5"/>
+        <TextBox Grid.Row="0" x:Name="txbName" HorizontalAlignment="Right" Width="250" Margin="5" />
+
+        <Label Grid.Row="1" Content="Surname:" HorizontalAlignment="Left" Width="150" Margin="5"/>
+        <TextBox Grid.Row="1" x:Name="txbSurname" HorizontalAlignment="Right" Width="250" Margin="5" />
+
+        <Label Grid.Row="2" Content="Phone:" HorizontalAlignment="Left" Width="150" Margin="5"/>
+        <TextBox Grid.Row="2" x:Name="txbPhone" HorizontalAlignment="Right" Width="250" Margin="5" />
+
+        <Label Grid.Row="3" Content="Email:" HorizontalAlignment="Left" Width="150" Margin="5" />
+        <TextBox Grid.Row="3" x:Name="txbEmail" HorizontalAlignment="Right" Width="250" Margin="5" />
+
+        <Button Grid.Row="4" Content="Add Donor" Margin="5" Height="25" Click="btnAddDonor_Click"/>
+    </Grid>
+</Window>
