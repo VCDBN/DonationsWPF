@@ -23,6 +23,6 @@
 
         <ListBox Grid.Row="2" x:Name="lstDonationReport" Height="150" Margin="5"/>
 
-        <DataGrid Grid.Row="3" x:Name="dtaDonationReport" Height="150"/>
+        <DataGrid Grid.Row="3" x:Name="dtaDonationReport" Height="150" Margin="5"/>
     </Grid>
 </Window>
